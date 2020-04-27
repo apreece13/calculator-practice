@@ -11,6 +11,9 @@ document.querySelector("#addBtn").addEventListener("click", event => {
     <h1>${sum}</h1>
 </section>`
 
+document.querySelector("#firstInteger").value = ""
+document.querySelector("#secondInteger").value = ""
+
 })
 
 document.querySelector("#subtractBtn").addEventListener("click", event => {
@@ -23,6 +26,9 @@ document.querySelector("#subtractBtn").addEventListener("click", event => {
 <section>
     <h1>${sum}</h1>
 </section>`
+
+document.querySelector("#firstInteger").value = ""
+document.querySelector("#secondInteger").value = ""
 
 })
 
@@ -37,11 +43,14 @@ document.querySelector("#multiplicationBtn").addEventListener("click", event => 
     <h1>${sum}</h1>
 </section>`
 
+document.querySelector("#firstInteger").value = ""
+document.querySelector("#secondInteger").value = ""
+
 })
 
 document.querySelector("#divisionBtn").addEventListener("click", event => {
-    const numberOne = document.querySelector("#firstInteger").value
-    const numberTwo = document.querySelector("#secondInteger").value
+    let numberOne = document.querySelector("#firstInteger").value
+    let numberTwo = document.querySelector("#secondInteger").value
 
     var sum = parseInt(numberOne) / parseInt(numberTwo)
 
@@ -50,7 +59,12 @@ document.querySelector("#divisionBtn").addEventListener("click", event => {
     <h1>${sum}</h1>
 </section>`
 
+document.querySelector("#firstInteger").value = ""
+document.querySelector("#secondInteger").value = ""
+
 })
+
+
 
 
 
